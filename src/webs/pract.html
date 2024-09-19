@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Development</title>
+    <link rel="stylesheet" href="../stylesheets/pract.css">
+</head>
+<body>
+    <header>
+        <h1>Home</h1>
+    </header>
+    <div id="parent">
+        <nav id="bg">
+            <ul>
+                <li>
+
+                    <label for="blog">
+                        <input type="radio" name="icons" onclick="loadPage('blog.html')" id="blog">
+                        <img src="../resource/nav.png" alt="" class="img img-small">
+                    </label>
+                    <label for="home">
+                        <input type="radio" name="icons" onclick="loadPage('home.html')" id="home" checked>
+                        <img src="../resource/home.png" alt="" class="img">
+                    </label>
+
+                    <label for="contact-us">
+                        <input type="radio" name="icons" onclick="loadPage('contact.html')" id="contact-us">
+                        <img src="../resource/email.png"  class="img img-small">
+                    </label>
+
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <iframe name="contentFrame" src="home.html"></iframe>
+    </main>
+    <script src="../programs/pract.js"></script>
+</body>
+</html>
