@@ -28,6 +28,9 @@ ul{
 li{
     margin-left: 6em;
 }
+h6{
+    margin-bottom: 8px;
+}
 a{
     position: relative;
     display: flex;
