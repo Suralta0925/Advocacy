@@ -7,9 +7,7 @@
 }
 html{
     background-color: rgba(24, 46, 193, 0.629);
-    overflow: hidden;
-    overflow-x: hidden;
-    overflow-y: hidden;
+
 }
 #parent{
     display: flex;
@@ -111,4 +109,35 @@ h1{
 .tooltip-container:hover .tooltip {
     visibility: visible; /* Show tooltip on hover */
     opacity: 1; /* Fade in */
+}
+@media (max-width:700px) {
+    html{
+        display: flex;
+        justify-content: center;
+    }
+
+    #parent{
+        flex-direction: row;
+        float: none;
+        margin: none;
+        height: fit-content;
+        margin-bottom: 50px;
+
+    }
+    li{
+        display: flex;
+        flex-direction: row;
+
+    }
+    main{
+        margin: 0;
+        width: 80vh;
+    }
+    #bg{
+        width: 80vh;
+    }
+    h1{
+        width: 80vh;
+        text-align: center;
+    }
 }
