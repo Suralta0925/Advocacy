@@ -27,11 +27,13 @@ header{
     background-color: aliceblue;
 }
 #bg{
-    height: fit;
+    height: fit-content;
+    width: 9vw;
     border: 5px solid blueviolet ;
     background-color: rgb(226, 52, 226);
     border-radius: 2em;
     align-items: flex-start;
+    min-width: 100px;
 }
 
 a{
@@ -39,17 +41,17 @@ a{
 }
 
 .img{
-    border-radius: 2em;
-    max-height: 75px;
-    margin: 5px 5px;
-    padding: 1em;
+    border-radius: 50%;
+    height: 8.5vw;
+    padding: 1vw;
     cursor: pointer;
-    height: fit-content;
+    min-height: 6.5vw;
 }
 
 .img-small{
-    max-height: 75px;
-    padding:.5em;
+    height: 8vw;
+    padding:.5vw;
+    min-height: 6vw;;
 }
 
 li{
@@ -83,4 +85,30 @@ iframe{
 }
 h1{
     font-size: 1.5em;
+}
+.tooltip-container {
+    position: relative; /* For positioning the tooltip */
+    display: inline-block; /* Make it inline for wrapping */
+}
+
+.tooltip {
+    visibility: hidden; /* Hidden by default */
+    width: 120px; /* Adjust as needed */
+    background-color: black; /* Tooltip background color */
+    color: white; /* Tooltip text color */
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Rounded corners */
+    padding: 5px; /* Padding for the tooltip */
+    position: absolute; /* Position it relative to the container */
+    z-index: 1; /* Sit on top */
+    bottom: 90%; /* Position above the icon */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center adjustment */
+    opacity: 0; /* Start invisible */
+    transition: opacity 0.3s; /* Fade in effect */
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible; /* Show tooltip on hover */
+    opacity: 1; /* Fade in */
 }
