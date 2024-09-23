@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 html{
+    display: flex;
+    justify-content: center;
     font-size: 18px;
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -49,9 +51,6 @@ a:hover{
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
-    overflow: hidden; 
-    overflow-x: hidden; 
-    overflow-y: hidden; 
 }
 .text{
     

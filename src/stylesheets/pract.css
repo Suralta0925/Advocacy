@@ -135,9 +135,21 @@ h1{
     }
     #bg{
         width: 80vh;
+        height: 10vh;
+        align-items: center;
+        justify-content: center;
     }
     h1{
         width: 80vh;
         text-align: center;
+    }
+    .img{
+        border-radius: 50%;
+        height: 50px;
+
+    }
+    
+    .img-small{
+        height: 55px;
     }
 }
